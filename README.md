@@ -18,7 +18,7 @@
 
 ## Requirements
 
-This program requires **Python 3.13.1 or newer**.
+This program requires **Python 3.12.3 or newer**.
 
 * Python 3.12.3+ so that this program runs well.
 
