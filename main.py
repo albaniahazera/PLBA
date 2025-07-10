@@ -7,7 +7,7 @@ fileData = "data.txt"
 fullDataPath = os.path.join(folderData, fileData)
 
 PROGRAM_VERSION = "1.0.0"
-MIN_PYTHON_VERSION = (3, 13, 1)
+MIN_PYTHON_VERSION = (3, 12, 3)
 
 # check python version function
 def checkPython():
