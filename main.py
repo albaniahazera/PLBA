@@ -6,7 +6,7 @@ folderData = "Datas"
 fileData = "data.txt"
 fullDataPath = os.path.join(folderData, fileData)
 
-PROGRAM_VERSION = "1.0.0"
+PROGRAM_VERSION = "1.1.0"
 MIN_PYTHON_VERSION = (3, 11, 2)
 
 # check python version function
