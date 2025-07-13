@@ -7,7 +7,7 @@ fileData = "data.txt"
 fullDataPath = os.path.join(folderData, fileData)
 
 PROGRAM_VERSION = "1.0.0"
-MIN_PYTHON_VERSION = (3, 12, 3)
+MIN_PYTHON_VERSION = (3, 11, 2)
 
 # check python version function
 def checkPython():
@@ -28,6 +28,7 @@ def addingSymbol():
     print("3. [Example data]")
     print("4. {Example data}")
     print("5. Example data,")
+    print("6. `Example data`")
     print("Enter any input except menu above For exit the program !")
     userChoose = input("Choose: ")
     if userChoose == "1":
@@ -40,6 +41,8 @@ def addingSymbol():
         curlyBrackets()
     elif userChoose == "5":
         coma()
+    elif userChoose == "6":
+        backtick()
     else:
         print("You exit the program !")
         exit
@@ -173,6 +176,33 @@ def coma():
             time.sleep(1.8)
             osCleanerHandler()
             coma()
+
+# adding backtick function 
+def backtick():
+    print("You choose: ``")
+    print("Enter data !")
+    stringInput = input("Data: ")
+    finalInput = (f"`{stringInput}`")
+    print(f"Result: {finalInput}")
+    print(f"Wanna save result to {fileData} y/n ?")
+    userSave = input("Input: ").lower()
+    if userSave == "y":
+        saveData(finalInput)
+        backtick()
+    else:
+        print("\nEnter Y/y to exit program, or enter any input to back the program.")
+        userInput = input("Input: ").lower()
+        if userInput == "y":
+            print("\nYou will be back to the first program !")
+            time.sleep(1.8)
+            addingSymbol()
+        else:
+            print("\nInvalid input !")
+            print("You will return to enter data set to coma")
+            time.sleep(1.8)
+            osCleanerHandler()
+            backtick()
+
 
 # save data to file.txt
 def saveData(dataToSave):
