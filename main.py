@@ -10,6 +10,7 @@ from moduls.program import summation
 
 PROGRAM_VERSION = "1.1.0"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 def mainMenu():
     while True:
@@ -23,6 +24,8 @@ def mainMenu():
         userInput = input("-> ").strip()
         if userInput == "1":
 =======
+=======
+>>>>>>> 32024b899e8dace5c1fc42df386ac292a8e27b46
 MIN_PYTHON_VERSION = (3, 11, 2)
 
 # check python version function
